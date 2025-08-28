@@ -9,9 +9,10 @@
 ---
 
 ## 📂 Project Structure
+
 Flutter_MusicPlayer/
 ├── lib/
-| ├── main.dart \n
+| ├── main.dart
 | ├── ListOfSongs.dart
 | ├── LoginPage.dart
 | ├── MOZX.dart
