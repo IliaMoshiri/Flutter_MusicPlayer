@@ -11,7 +11,7 @@
 ## 📂 Project Structure
 Flutter_MusicPlayer/
 ├── lib/
-| ├── main.dart
+| ├── main.dart \n
 | ├── ListOfSongs.dart
 | ├── LoginPage.dart
 | ├── MOZX.dart
