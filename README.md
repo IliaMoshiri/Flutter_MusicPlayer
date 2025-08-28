@@ -51,16 +51,25 @@ flutter run
 
 ## 📸 Screenshots
 <p align="center">
-  ![Main Menu Page](https://raw.githubusercontent.com/IliaMoshiri/Flutter_MusicPlayer/my_backend_users/pictures/Screenshot_20250828_195322.jpg)
-  ![Side Bar](https://raw.githubusercontent.com/IliaMoshiri/Flutter_MusicPlayer/my_backend_users/pictures/Screenshot_20250828_195343.jpg)
-  ![Profile Page](https://raw.githubusercontent.com/IliaMoshiri/Flutter_MusicPlayer/my_backend_users/pictures/Screenshot_20250828_195348.jpg)
-  ![My Songs Page](https://raw.githubusercontent.com/IliaMoshiri/Flutter_MusicPlayer/my_backend_users/pictures/Screenshot_20250828_195355.jpg)
-  ![Payment Page](https://raw.githubusercontent.com/IliaMoshiri/Flutter_MusicPlayer/my_backend_users/pictures/Screenshot_20250828_195403.jpg)
-  ![Shop Page (1)](https://raw.githubusercontent.com/IliaMoshiri/Flutter_MusicPlayer/my_backend_users/pictures/Screenshot_20250828_195410.jpg)
-  ![Shop Page (2)](https://raw.githubusercontent.com/IliaMoshiri/Flutter_MusicPlayer/my_backend_users/pictures/Screenshot_20250828_195415.jpg)
-  ![Playing Songs Page](https://raw.githubusercontent.com/IliaMoshiri/Flutter_MusicPlayer/my_backend_users/pictures/Screenshot_20250828_195441.jpg)
-  ![Search Page](https://raw.githubusercontent.com/IliaMoshiri/Flutter_MusicPlayer/my_backend_users/pictures/Screenshot_20250828_195540.jpg)
-  ![Search Result Page](https://raw.githubusercontent.com/IliaMoshiri/Flutter_MusicPlayer/my_backend_users/pictures/Screenshot_20250828_195603.jpg)
+  <img src="https://raw.githubusercontent.com/IliaMoshiri/Flutter_MusicPlayer/my_backend_users/pictures/Screenshot_20250828_195322.jpg" width="30%">
+  <img src="https://raw.githubusercontent.com/IliaMoshiri/Flutter_MusicPlayer/my_backend_users/pictures/Screenshot_20250828_195343.jpg" width="30%">
+  <img src="https://raw.githubusercontent.com/IliaMoshiri/Flutter_MusicPlayer/my_backend_users/pictures/Screenshot_20250828_195348.jpg" width="30%">
+</p>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/IliaMoshiri/Flutter_MusicPlayer/my_backend_users/pictures/Screenshot_20250828_195355.jpg" width="30%">
+  <img src="https://raw.githubusercontent.com/IliaMoshiri/Flutter_MusicPlayer/my_backend_users/pictures/Screenshot_20250828_195403.jpg" width="30%">
+  <img src="https://raw.githubusercontent.com/IliaMoshiri/Flutter_MusicPlayer/my_backend_users/pictures/Screenshot_20250828_195410.jpg" width="30%">
+</p>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/IliaMoshiri/Flutter_MusicPlayer/my_backend_users/pictures/Screenshot_20250828_195415.jpg" width="30%">
+  <img src="https://raw.githubusercontent.com/IliaMoshiri/Flutter_MusicPlayer/my_backend_users/pictures/Screenshot_20250828_195441.jpg" width="30%">
+  <img src="https://raw.githubusercontent.com/IliaMoshiri/Flutter_MusicPlayer/my_backend_users/pictures/Screenshot_20250828_195540.jpg" width="30%">
+</p>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/IliaMoshiri/Flutter_MusicPlayer/my_backend_users/pictures/Screenshot_20250828_195603.jpg" width="30%">
 </p>
 
 ---
