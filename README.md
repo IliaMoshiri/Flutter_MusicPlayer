@@ -2,7 +2,8 @@
 ## 🛠️ Tech Stack
 
 - [Flutter](https://flutter.dev/)  
-- [Dart](https://dart.dev/)  
+- [Dart](https://dart.dev/)
+- [Java](https://java.dev/)  
 - Custom Widgets for UI  
 - Material Design Components  
 
