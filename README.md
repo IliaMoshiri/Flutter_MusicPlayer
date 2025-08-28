@@ -9,7 +9,7 @@
 ---
 
 ## 📂 Project Structure
-
+```text
 Flutter_MusicPlayer/
 ├── lib/
 | ├── main.dart
@@ -31,7 +31,7 @@ Flutter_MusicPlayer/
 ├── assets/
 | ├── images
 | ├── audios
-
+```
 ---
 
 ## 🚀 Getting Started
