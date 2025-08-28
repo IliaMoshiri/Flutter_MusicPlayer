@@ -1,16 +1,10 @@
-# mozx
-
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![Main Menu Page](https://raw.githubusercontent.com/IliaMoshiri/Flutter_MusicPlayer/my_backend_users/pictures/Screenshot_20250828_195322.jpg)
+![Side Bar](https://raw.githubusercontent.com/IliaMoshiri/Flutter_MusicPlayer/my_backend_users/pictures/Screenshot_20250828_195343.jpg)
+![Profile Page](https://raw.githubusercontent.com/IliaMoshiri/Flutter_MusicPlayer/my_backend_users/pictures/Screenshot_20250828_195348.jpg)
+![My Songs Page](https://raw.githubusercontent.com/IliaMoshiri/Flutter_MusicPlayer/my_backend_users/pictures/Screenshot_20250828_195355.jpg)
+![Payment Page](https://raw.githubusercontent.com/IliaMoshiri/Flutter_MusicPlayer/my_backend_users/pictures/Screenshot_20250828_195403.jpg)
+![Shop Page (1)](https://raw.githubusercontent.com/IliaMoshiri/Flutter_MusicPlayer/my_backend_users/pictures/Screenshot_20250828_195410.jpg)
+![Shop Page (2)](https://raw.githubusercontent.com/IliaMoshiri/Flutter_MusicPlayer/my_backend_users/pictures/Screenshot_20250828_195415.jpg)
+![Playing Songs Page](https://raw.githubusercontent.com/IliaMoshiri/Flutter_MusicPlayer/my_backend_users/pictures/Screenshot_20250828_195441.jpg)
+![Search Page](https://raw.githubusercontent.com/IliaMoshiri/Flutter_MusicPlayer/my_backend_users/pictures/Screenshot_20250828_195540.jpg)
+![Search Result Page](https://raw.githubusercontent.com/IliaMoshiri/Flutter_MusicPlayer/my_backend_users/pictures/Screenshot_20250828_195603.jpg)
