@@ -3,12 +3,14 @@ C:\testfive\BackEnd\BackEnd_User\src\main\java\com\example\testfive\repository\C
 C:\testfive\BackEnd\BackEnd_User\src\main\java\com\example\testfive\MozxApplication.java
 C:\testfive\BackEnd\BackEnd_User\src\main\java\com\example\testfive\entity\Comment.java
 C:\testfive\BackEnd\BackEnd_User\src\main\java\com\example\testfive\model\User.java
+C:\testfive\BackEnd\BackEnd_User\src\main\java\com\example\testfive\service\SongService.java
 C:\testfive\BackEnd\BackEnd_User\src\main\java\com\example\testfive\repository\DownloadRepository.java
 C:\testfive\BackEnd\BackEnd_User\src\main\java\com\example\testfive\controller\UserController.java
 C:\testfive\BackEnd\BackEnd_User\src\main\java\com\example\testfive\dto\CommentRequest.java
 C:\testfive\BackEnd\BackEnd_User\src\main\java\com\example\testfive\repository\UserRepository.java
 C:\testfive\BackEnd\BackEnd_User\src\main\java\com\example\testfive\service\UserService.java
 C:\testfive\BackEnd\BackEnd_User\src\main\java\com\example\testfive\entity\ShopSong.java
+C:\testfive\BackEnd\BackEnd_User\src\main\java\com\example\testfive\entity\Song.java
 C:\testfive\BackEnd\BackEnd_User\src\main\java\com\example\testfive\service\ShopService.java
 C:\testfive\BackEnd\BackEnd_User\src\main\java\com\example\testfive\entity\Download.java
 C:\testfive\BackEnd\BackEnd_User\src\main\java\com\example\testfive\repository\CommentRepository.java
@@ -22,6 +24,9 @@ C:\testfive\BackEnd\BackEnd_User\src\main\java\com\example\testfive\dto\LikeSumm
 C:\testfive\BackEnd\BackEnd_User\src\main\java\com\example\testfive\repository\ShopSongRepository.java
 C:\testfive\BackEnd\BackEnd_User\src\main\java\com\example\testfive\controller\CommentController.java
 C:\testfive\BackEnd\BackEnd_User\src\main\java\com\example\testfive\controller\ShopController.java
+C:\testfive\BackEnd\BackEnd_User\src\main\java\com\example\testfive\repository\SongRepository.java
 C:\testfive\BackEnd\BackEnd_User\src\main\java\com\example\testfive\controller\ApiResponse.java
+C:\testfive\BackEnd\BackEnd_User\src\main\java\com\example\testfive\dto\SongRequest.java
 C:\testfive\BackEnd\BackEnd_User\src\main\java\com\example\testfive\entity\SongLike.java
 C:\testfive\BackEnd\BackEnd_User\src\main\java\com\example\testfive\service\CommentService.java
+C:\testfive\BackEnd\BackEnd_User\src\main\java\com\example\testfive\controller\SongController.java
