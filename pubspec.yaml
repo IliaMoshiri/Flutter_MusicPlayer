@@ -42,6 +42,13 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
 
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/logo.png"
+  adaptive_icon_background: "#000000"
+  adaptive_icon_foreground: "assets/black.png"
+
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
   # activated in the `analysis_options.yaml` file located at the root of your
@@ -95,6 +102,15 @@ flutter:
     - assets/Picsart_25-05-22_23-00-43-699.jpg
     - assets/Picsart_25-05-22_23-02-07-475.jpg
     - assets/Picsart_25-05-22_23-02-47-206.jpg
+    - assets/black.png
+    - assets/wtf.jpg
+    - assets/starboyp.jpg
+    - assets/sickomode.jpg
+    - assets/fein.jpg
+    - assets/ey val.jpg
+    - assets/ebi.jpg
+    - assets/ahmagh.jpg
+    - assets/loveagain.jpg
 
 
   # To add assets to your application, add an assets section, like this:

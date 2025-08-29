@@ -42,7 +42,7 @@ class _WritePageState extends State<WritePage> {
           maxLines: null,
           style: const TextStyle(color: Colors.white),
           decoration: InputDecoration(
-            hintText: "سلام ما ایلیا و سینا و فاطمه هستیم و این برنامه رو ساختیم اگه نظری برای بهتر شدنش داری به این ایدی ها تو تلگرام پیام بده@Sinaxrh1384 @Iliaamm",
+            hintText: "سلام ما ایلیا و سینا هستیم و این برنامه رو ساختیم اگه نظری برای بهتر شدنش داری به این ایدی ها تو تلگرام پیام بده@Sinaxrh1384 @Iliaamm",
             hintStyle: const TextStyle(color: Colors.grey),
             border: OutlineInputBorder(
               borderRadius: BorderRadius.circular(12),

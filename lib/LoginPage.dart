@@ -1,20 +1,12 @@
-import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter/material.dart';
-import 'LogInPage.dart';
-import 'Password.dart';
-import 'SignUpPage.dart';
-import 'ShopPage.dart';
-import 'MySongPage.dart';
-import 'MOZX.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'dart:convert';
+import 'package:http/http.dart' as http;
 import 'Profile.dart';
-import 'NowPlayingPage.dart';
-import 'package:audioplayers/audioplayers.dart';
-import 'PurchasePage.dart';
-import 'ListOfSongs.dart';
-import 'SearchPage.dart';
-import 'song.dart';
-import 'wallet.dart';
-import 'dart:async';
+import 'config.dart';
+import 'Password.dart';
+import 'MOZX.dart';
+import 'SignupPage.dart';
 
 
 class LoginPage extends StatelessWidget {
@@ -75,22 +67,81 @@ class LoginPage extends StatelessWidget {
                 width: 360,
                 height: 45,
                 child: ElevatedButton(
-                  onPressed: () {
-                    if (usernameController.text.isEmpty || passwordController.text.isEmpty) {
+                  onPressed: () async {
+                    final emailOrUsername = usernameController.text.trim();
+                    final password = passwordController.text.trim();
+
+                    if (emailOrUsername.isEmpty || password.isEmpty) {
                       ScaffoldMessenger.of(context).showSnackBar(
                         SnackBar(
-                          content: Text('Please complete every field of the form'),
-                          backgroundColor: Colors.white,
+                          content: Text('Please complete every field of the form' , style: TextStyle(color: Colors.white),),
+                          backgroundColor: Colors.red,
+                          behavior: SnackBarBehavior.floating,
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(12),
+                          ),
                         ),
                       );
-                    } else {
-                      UserData.login(
-                        username: usernameController.text,
-                        email: usernameController.text + "@gmail.com",
+                      return;
+                    }
+
+                    try {
+                      final loginUrl = Uri.parse('$baseUrl/api/users/login');
+                      final response = await http.post(
+                        loginUrl,
+                        headers: {'Content-Type': 'application/json'},
+                        body: jsonEncode({
+                          'email': emailOrUsername,
+                          'password': password,
+                        }),
                       );
-                      Navigator.pushReplacement(
-                        context,
-                        MaterialPageRoute(builder: (context) => MainMenuPage()),
+
+                      if (response.statusCode == 200) {
+                        final body = jsonDecode(response.body);
+                        final userData = body['data'] ?? {};
+
+                        UserData.isLoggedIn = true;
+                        UserData.name = userData['name'] ?? '';
+                        UserData.email = userData['email'] ?? '';
+                        UserData.phone = userData['phoneNumber'] ?? '';
+                        UserData.wallet = (userData['wallet']?.toString() ?? '0.00');
+
+                        ScaffoldMessenger.of(context).showSnackBar(
+                          SnackBar(content: Text('Welcome back, ${UserData.name}!' , style: TextStyle(color: Colors.black),),
+                            backgroundColor: Colors.green,
+                            behavior: SnackBarBehavior.floating,
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(12),
+                            ),
+                          ),
+                        );
+
+                        Navigator.pushReplacement(
+                          context,
+                          MaterialPageRoute(builder: (context) => MainMenuPage()),
+                        );
+                      } else {
+                        final errorMsg = jsonDecode(response.body)['message'] ?? 'Login failed';
+                        ScaffoldMessenger.of(context).showSnackBar(
+                          SnackBar(content: Text('Login failed: $errorMsg' , style: TextStyle(color: Colors.white),),
+                            backgroundColor: Colors.red,
+                            behavior: SnackBarBehavior.floating,
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(12),
+                            ),
+                          ),
+                        );
+                      }
+                    } catch (e) {
+                      ScaffoldMessenger.of(context).showSnackBar(
+                        SnackBar(content: Text('Connection error: $e' , style: TextStyle(color: Colors.white),
+                        ),
+                          backgroundColor: Colors.red,
+                          behavior: SnackBarBehavior.floating,
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(12),
+                          ),
+                        ),
                       );
                     }
                   },
@@ -116,7 +167,7 @@ class LoginPage extends StatelessWidget {
                 onPressed: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => SignIn()),
+                    MaterialPageRoute(builder: (context) => SignupPage()),
                   );
                 },
                 child: Text(
@@ -158,3 +209,7 @@ class UserData {
     email = '';
   }
 }
+
+
+
+

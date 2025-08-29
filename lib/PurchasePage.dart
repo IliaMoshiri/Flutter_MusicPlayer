@@ -9,12 +9,13 @@ import 'MOZX.dart';
 import 'Profile.dart';
 import 'NowPlayingPage.dart';
 import 'package:audioplayers/audioplayers.dart';
-import 'PurchasePage.dart';
 import 'ListOfSongs.dart';
 import 'SearchPage.dart';
 import 'song.dart';
 import 'wallet.dart';
 import 'dart:async';
+import 'config.dart';
+import 'commentAPI.dart' as api;
 
 
 
@@ -35,12 +36,34 @@ class _PurchasePageState extends State<PurchasePage> {
   bool _isDownloading = false;
   bool _downloaded = false;
 
-  List<Comment> _comments = [
-    Comment(author: 'Hashem', text: 'Very good song!', likes: 1),
-    Comment(author: 'Qmrs', text: 'nice'),
-  ];
+  List<api.Comment> _comments = [];
   final TextEditingController _commentController = TextEditingController();
 
+
+  @override
+  void initState() {
+    super.initState();
+    _fetchComments();
+  }
+
+
+  Future<void> _fetchComments() async {
+    try {
+      final List<api.Comment> comments = await api.getComments(widget.song.assetPath);
+      setState(() {
+        _comments = comments
+            .map((c) => api.Comment(
+          author: c.author,
+          text: c.text,
+          likes: c.likes,
+          dislikes: c.dislikes,
+        ))
+            .toList();
+      });
+    } catch (e) {
+      print("Error : $e");
+    }
+  }
 
   void _startDownload() {
     if (_downloaded) return;
@@ -79,14 +102,29 @@ class _PurchasePageState extends State<PurchasePage> {
   }
 
 
-  void _postComment() {
+  Future<void> _postComment() async {
     final text = _commentController.text.trim();
-    if (text.isEmpty || !_downloaded) return;
-    setState(() {
-      _comments.insert(0, Comment(author: 'You', text: text));
-      _commentController.clear();
-    });
+    if (text.isEmpty) return;
+
+    try {
+      await api.addComment(widget.song.assetPath, text, 1);
+      setState(() {
+        _comments.insert(0, api.Comment(author: 'You', text: text));
+        _commentController.clear();
+      });
+    } catch (e) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text("Error: $e" , style: TextStyle(color: Colors.white),),
+          backgroundColor: Colors.red,
+          behavior: SnackBarBehavior.floating,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(12),
+          ),
+        ),
+      );
+    }
   }
+
 
   @override
   Widget build(BuildContext context) {
@@ -149,11 +187,9 @@ class _PurchasePageState extends State<PurchasePage> {
                               i < _rating ? Icons.favorite : Icons.favorite_border,
                               color: i < _rating ? Colors.red : Colors.white,
                             ),
-                            onPressed: _downloaded
-                                ? () {
+                            onPressed: () {
                               setState(() => _rating = i + 1);
-                            }
-                                : null,
+                            },
                           );
                         }),
                       ),
@@ -187,7 +223,7 @@ class _PurchasePageState extends State<PurchasePage> {
                 Expanded(
                   child: TextField(
                     controller: _commentController,
-                    enabled: _downloaded,
+                    //enabled: _downloaded,
                     style: TextStyle(color: Colors.white),
                     decoration: InputDecoration(
                       hintText: _downloaded ? 'Comment...' : 'Purchase to comment',
@@ -204,8 +240,8 @@ class _PurchasePageState extends State<PurchasePage> {
                 ),
                 SizedBox(width: 8),
                 IconButton(
-                  icon: Icon(Icons.send, color: _downloaded ? Colors.white : Colors.grey),
-                  onPressed: _downloaded ? _postComment : null,
+                  icon: Icon(Icons.send, color: Colors.white),
+                  onPressed: _postComment,
                 ),
               ],
             ),
@@ -242,16 +278,3 @@ class _PurchasePageState extends State<PurchasePage> {
 
 
 
-class Comment {
-  final String author;
-  final String text;
-  int likes;
-  int dislikes;
-
-  Comment({
-    required this.author,
-    required this.text,
-    this.likes = 0,
-    this.dislikes = 0,
-  });
-}
