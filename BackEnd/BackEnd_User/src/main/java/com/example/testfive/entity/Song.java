@@ -2,6 +2,7 @@ package com.example.testfive.entity;
 
 import jakarta.persistence.*;
 
+
 @Entity
 @Table(name = "songs")
 public class Song {
@@ -22,7 +23,7 @@ public class Song {
 
     private int likes = 0;
 
-    // --- Getters & Setters ---
+  
     public Long getId() {
         return id;
     }
