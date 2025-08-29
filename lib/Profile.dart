@@ -1,6 +1,6 @@
 import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter/material.dart';
-import 'LogInPage.dart';
+import 'LoginPage.dart';
 import 'Password.dart';
 import 'SignUpPage.dart';
 import 'ShopPage.dart';
@@ -130,7 +130,6 @@ class ProfilePage extends StatelessWidget {
   }
 
 }
-
 
 
 

@@ -39,30 +39,30 @@ class Song {
 
 
 List<Song> localSongs = [
-  Song(title: 'WTF', artist: "Hugel Delsa" , assetPath: 'wtf_hugel.mp3' , coverPath: 'assets/Picsart_25-05-22_23-00-43-699.jpg' , likes: 8 , price: "free"),
-  Song(title: 'FE!N', artist: 'Travis Scott' ,  assetPath: 'FE!N_Travis Scott, Playboi Carti.mp3' , coverPath: 'assets/Picsart_25-05-22_23-00-43-699.jpg' , likes: 10 , price: "free"),
-  Song(title: 'Star Boy', artist: 'The Weekend' , assetPath: 'starboy.mp3' , coverPath: 'assets/Picsart_25-05-22_23-00-43-699.jpg' , likes: 5 , price: "free"),
-  Song(title: 'Ahmagh', artist: 'Reza Golzar' , assetPath: 'AHMAGH (by @Arshiashi).mp3' , coverPath: 'assets/Picsart_25-05-22_23-00-43-699.jpg' , likes: 20 , price: "free"),
-  Song(title: 'Eyval', artist: 'Alireza JJ' , assetPath: 'Alireza JJ & Sijal & Nassim – Eyval Eyval.mp3' , coverPath: 'assets/Picsart_25-05-22_23-00-43-699.jpg' , likes: 4 , price: "free"),
-  Song(title: 'Goriz', artist: 'Ebi' , assetPath: '02 Goriz.mp3' , coverPath: 'assets/Picsart_25-05-22_23-00-43-699.jpg' , likes: 20 , price: "free"),
+  Song(title: 'WTF', artist: "Hugel Delsa" , assetPath: 'wtf_hugel.mp3' , coverPath: 'assets/wtf.jpg' , likes: 8 , price: "free"),
+  Song(title: 'FE!N', artist: 'Travis Scott' ,  assetPath: 'FE!N_Travis Scott, Playboi Carti.mp3' , coverPath: 'assets/fein.jpg' , likes: 10 , price: "free"),
+  Song(title: 'Star Boy', artist: 'The Weekend' , assetPath: 'starboy.mp3' , coverPath: 'assets/starboyp.jpg' , likes: 5 , price: "free"),
+  Song(title: 'Ahmagh', artist: 'Reza Golzar' , assetPath: 'AHMAGH (by @Arshiashi).mp3' , coverPath: 'assets/ahmagh.jpg' , likes: 20 , price: "free"),
+  Song(title: 'Eyval', artist: 'Alireza JJ' , assetPath: 'Alireza JJ & Sijal & Nassim – Eyval Eyval.mp3' , coverPath: 'assets/ey val.jpg' , likes: 4 , price: "free"),
+  Song(title: 'Goriz', artist: 'Ebi' , assetPath: '02 Goriz.mp3' , coverPath: 'assets/ebi.jpg' , likes: 20 , price: "free"),
 ];
 
 
 List<Song> mySongs = [
-  Song(title: 'Love Again', artist: 'Dua Lipa', assetPath: 'Love Again_Dua Lipa.mp3', coverPath: 'assets/Picsart_25-05-22_22-58-26-524.jpg', likes: 6 , price: "free"),
-  Song(title: 'The Scotts', artist: 'Travis Scott & Kid Cudi', assetPath: 'the_scotts_kid.mp3', coverPath: 'assets/Picsart_25-05-22_22-58-26-524.jpg', price: "free" , likes: 7),
+  Song(title: 'Love Again', artist: 'Dua Lipa', assetPath: 'Love Again_Dua Lipa.mp3', coverPath: 'assets/loveagain.jpg', likes: 6 , price: "free"),
+  Song(title: 'The Scotts', artist: 'Travis Scott & Kid Cudi', assetPath: 'the_scotts_kid.mp3', coverPath: 'assets/sickomode.jpg', price: "free" , likes: 7),
 ];
 
 
 List<Song> AllMYSongs = [
-  Song(title: 'WTF', artist: "Hugel Delsa" , assetPath: 'wtf_hugel.mp3' , coverPath: 'assets/Picsart_25-05-22_23-00-43-699.jpg' , likes: 8 , price: "free"),
-  Song(title: 'FE!N', artist: 'Travis Scott' ,  assetPath: 'FE!N_Travis Scott, Playboi Carti.mp3' , coverPath: 'assets/Picsart_25-05-22_23-00-43-699.jpg' , likes: 10 , price: "free"),
-  Song(title: 'Star Boy', artist: 'The Weekend' , assetPath: 'starboy.mp3' , coverPath: 'assets/Picsart_25-05-22_23-00-43-699.jpg' , likes: 5 , price: "free"),
-  Song(title: 'Love Again', artist: 'Dua Lipa', assetPath: 'Love Again_Dua Lipa.mp3', coverPath: 'assets/Picsart_25-05-22_22-58-26-524.jpg', likes: 6 , price: "free"),
-  Song(title: 'The Scotts', artist: 'Travis Scott & Kid Cudi', assetPath: 'the_scotts_kid.mp3', coverPath: 'assets/Picsart_25-05-22_22-58-26-524.jpg', price: "free" , likes: 7),
-  Song(title: 'Ahmagh', artist: 'Reza Golzar' , assetPath: 'AHMAGH (by @Arshiashi).mp3' , coverPath: 'assets/Picsart_25-05-22_23-00-43-699.jpg' , likes: 20 , price: "free"),
-  Song(title: 'Eyval', artist: 'Alireza JJ' , assetPath: 'Alireza JJ & Sijal & Nassim – Eyval Eyval.mp3' , coverPath: 'assets/Picsart_25-05-22_23-00-43-699.jpg' , likes: 4 , price: "free"),
-  Song(title: 'Goriz', artist: 'Ebi' , assetPath: '02 Goriz.mp3' , coverPath: 'assets/Picsart_25-05-22_23-00-43-699.jpg' , likes: 20 , price: "free"),
+  Song(title: 'WTF', artist: "Hugel Delsa" , assetPath: 'wtf_hugel.mp3' , coverPath: 'assets/wtf.jpg' , likes: 8 , price: "free"),
+  Song(title: 'FE!N', artist: 'Travis Scott' ,  assetPath: 'FE!N_Travis Scott, Playboi Carti.mp3' , coverPath: 'assets/fein.jpg' , likes: 10 , price: "free"),
+  Song(title: 'Star Boy', artist: 'The Weekend' , assetPath: 'starboy.mp3' , coverPath: 'assets/starboyp.jpg' , likes: 5 , price: "free"),
+  Song(title: 'Love Again', artist: 'Dua Lipa', assetPath: 'Love Again_Dua Lipa.mp3', coverPath: 'assets/loveagain.jpg', likes: 6 , price: "free"),
+  Song(title: 'The Scotts', artist: 'Travis Scott & Kid Cudi', assetPath: 'the_scotts_kid.mp3', coverPath: 'assets/sickomode.jpg', price: "free" , likes: 7),
+  Song(title: 'Ahmagh', artist: 'Reza Golzar' , assetPath: 'AHMAGH (by @Arshiashi).mp3' , coverPath: 'assets/ahmagh.jpg' , likes: 20 , price: "free"),
+  Song(title: 'Eyval', artist: 'Alireza JJ' , assetPath: 'Alireza JJ & Sijal & Nassim – Eyval Eyval.mp3' , coverPath: 'assets/ey val.jpg' , likes: 4 , price: "free"),
+  Song(title: 'Goriz', artist: 'Ebi' , assetPath: '02 Goriz.mp3' , coverPath: 'assets/ebi.jpg' , likes: 20 , price: "free"),
 ];
 
 
